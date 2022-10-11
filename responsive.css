@@ -1,0 +1,44 @@
+@media (max-width: 1080px){
+    .container{
+        flex-direction: column;
+    }
+
+    .unidade{
+        margin-bottom: 5rem;
+    }
+
+    .cardsCadapio{
+        flex-direction: column;
+    }
+
+
+
+    .cardLeft{
+        margin-bottom: 3rem;
+        padding: 3rem 3rem;
+    }
+
+    .cardRight{
+        padding: 3rem 3rem;
+    }
+
+    .maps iframe {
+        width: 22rem;
+    }
+
+    footer h3 {
+        font-size: .7rem;
+    }
+
+    .containerHeader img{
+        width: 8rem;
+    }
+    
+    .socialNetwork img{
+        width: 25px;
+    }
+
+    .nav-list li a{
+        font-size: .8rem;
+    }
+}
