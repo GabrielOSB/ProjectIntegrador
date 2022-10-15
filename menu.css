@@ -1,0 +1,19 @@
+.card-context-salgado{
+    max-width: 62rem;
+    margin: 4rem auto;
+
+    background: #9393933b;
+    padding: 3rem;
+}
+
+.card-salgado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 4rem 0; 
+}
+
+.image-card{
+    width: 6rem;
+}
