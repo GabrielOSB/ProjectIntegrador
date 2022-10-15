@@ -1,0 +1,72 @@
+.containerSobreNos
+{
+    max-width: 80rem;
+    margin: 4rem auto;
+}
+
+.contextSobreNos{
+    display: flex;
+}
+
+
+.imgEmpresa{
+    position: relative;
+
+    width: 35rem;
+    height: 18rem;
+}
+
+.imgEmpresa img{
+    position: absolute;
+    width: 35rem;
+}
+
+.textSobre{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+
+
+    max-width: 44rem;
+    padding-right: 22px;
+}
+
+footer{
+    position: relative;
+
+    height: 9rem;
+}
+
+.imageDog{
+    position: absolute;
+    bottom: 87px;
+    right: 0;
+}
+
+.footerContext{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.socialNetworkFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialNetworkFooter a{
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.enderecoFooter{
+    color: white;
+}
+
+.enderecoFooter h4{
+    padding-bottom: 16px;
+}

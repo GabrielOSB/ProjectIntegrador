@@ -42,7 +42,8 @@ header{
 }
 
 .socialNetwork{
-    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 10px;
 }
 
 .socialNetwork img{
