@@ -41,4 +41,19 @@
     .nav-list li a{
         font-size: .8rem;
     }
+
+    .imgEmpresa{
+        display: none;
+    }
+
+    .contextSobreNos{
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    
+    .containerSobreNos img{
+        display: flex;
+        margin: 0 auto;
+    }
 }
