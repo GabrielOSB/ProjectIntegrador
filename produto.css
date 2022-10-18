@@ -1,0 +1,17 @@
+.container-produtos{
+    max-width: 80rem;
+    margin: 10rem auto 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-produtos p{
+    max-width: 55rem;
+    margin: 0 auto
+}
+
+.image-produto p{
+    margin-top: 50px;
+}   
+
