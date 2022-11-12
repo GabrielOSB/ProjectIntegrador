@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="stylesheet" href="responsive.css">
 
     <link rel="icon" type="image/x-icon" href="./image/logo.svg">
@@ -54,57 +55,41 @@
 
     <main>
 
-        <div class="container">
+        <div class="container-cadastro">
 
-            <div class="unidade">
+            <div class="cadastro-inputs">
 
-                <div class="imageHome">
-                    <img src="./image/home.svg" alt="home">
-                </div>
+                <h3 id="cadastrosucess" style="display: none;">
+                    Lanche cadastrado
+                </h3>
 
-                <h3>Nossa Unidade</h3>
 
-                <p>R. Francisco Novaes, 719 </p>
-                <aside>Vila Paulista</aside>
+                <h1>Novo cadastro</h1>
 
-                <a href="https://www.google.com/maps/place/R.+Francisco+Novaes,+719+-+Vila+Paulista,+Cruzeiro+-+SP,+12701-230/@-22.5752,-44.963027,16z/data=!4m5!3m4!1s0x9df5d5310a51a3:0xd22778bf881f6129!8m2!3d-22.5751996!4d-44.9630275?hl=en"  target="_blank ">Como Chegar</a>
-            </div>
+                    <form class="form">
 
-            <div class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3684.1043685436216!2d-44.9675068!3d-22.5751995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9df5d5310a51a3%3A0xd22778bf881f6129!2sR.%20Francisco%20Novaes%2C%20719%20-%20Vila%20Paulista%2C%20Cruzeiro%20-%20SP%2C%2012701-230!5e0!3m2!1sen!2sbr!4v1665103980898!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
 
-        </div>
+                        <div class="input-wrapper">
+                            <label for="title">Nome do Lanche</label>
+                            <input type="text" name="title" id="js-name">
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <label for="title">Valor do lanche</label>
+                            <input type="text" name="title" id="js-price">
+                        </div>
 
-        <div class="containerCardapio">
+                        <div class="input-wrapper">
+                            <label for="description">Ingredientes</label>
+                            <textarea name="description" cols="30" rows="10" id="js-ingr"></textarea>
+                        </div>
 
-            <div class="cardapio">
+                        
 
-                <div class="logoCardapio">
-               
-                    <div class="lineCardapioLeft"></div>
-                    <img src="./image/cardapio.svg" alt="logo">
-                    <div class="lineCardapio"></div>
-               
-                </div>
+                        <button type="submit" onclick="addNewUser()" value="enviar">Salvar</button>
 
-                <div class="cardsCadapio">
+                    </form>
 
-                    <div class="cardLeft">
-                        <h3>Salgado</h3>
-                        <div class="lineCard"></div>
-                        <img src="./image/salgado.svg" alt="logo">
-                        <a href="./menu.html" >Acessar Menu</a>
-                    </div>
-
-                    <div class="cardRight">
-                        <h3>Doce</h3>
-                        <div class="lineCard"></div>
-                        <img src="./image/doce.svg" alt="logo">
-                        <a href="./menu.html">Acessar Menu</a>
-                    </div>
-
-                </div>
             </div>
 
         </div>
@@ -120,5 +105,8 @@
 </body>
 
     <script src="./menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
 
 </html>

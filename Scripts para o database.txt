@@ -1,0 +1,35 @@
+/* Script para criar tabela do Projeto Mister Dog */
+
+/* Criar Database */
+CREATE DATABASE MisterDog
+
+/* Usar database */
+USE MisterDog
+
+
+/* Criar Tabela de produto */
+CREATE TABLE Produto(
+	Id int NOT NULL AUTO_INCREMENT,
+	Nome varchar(50),
+	Ingrediente varchar(250),
+	Preco DECIMAL(6,2) NOT NULL,
+	PRIMARY KEY (Id)
+)
+
+/* Criar um produto para teste */
+INSERT INTO Produto(Nome, Ingrediente, Preco)VALUES(
+      'MOLHO PARA CACHORRO-QUENTE'
+		, '1 kg de salsicha 400 g de molho de tomate 4 tomates sem sementes picados 1 cebola grande ralada'
+		, 20.50
+)
+
+/* Verificar o produto criado a cima */
+SELECT * FROM Produto
+
+
+/* Alterar produto criado a cima */
+UPDATE Produto SET Nome = 'MOLHO PARA CACHORRO-QUENTE', Preco = 18.50 WHERE Id = 1
+
+
+/* Deletar produto criado a cima */
+DELETE FROM Produto WHERE Id = 1
