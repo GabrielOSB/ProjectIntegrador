@@ -49,12 +49,16 @@ const DOM = {
       var arr_from_json = JSON.parse(JSON.stringify(data));
       
       arr_from_json.forEach(element => {
-        const div = document.createElement('div');
+        const div = document.createElement('div.create');
+
+        const amount = Utils.formatCurrecy(element.Preco)
 
         var html = `    
             <h3>${element.Nome}</h3>
             <aside>${element.Ingrediente}</aside>
-            <p>${element.Preco}</p>
+            <p>${amount}</p>
+            <img src="./image/salgado.svg" alt="salgado" class="image-card">
+            <div class="lineCard"></div>
         `;
         
         div.innerHTML = html;
@@ -67,5 +71,19 @@ const DOM = {
     .catch((error) => console.log(error));
   },
 }
+
+const Utils = {
+  formatCurrecy(value){
+    value = String(value).replace(/\D/g, "")
+    value = Number(value) / 100
+    value = value.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL"
+    })
+
+    return value;
+  }
+}
+
 
 DOM.addDog(renderResult)

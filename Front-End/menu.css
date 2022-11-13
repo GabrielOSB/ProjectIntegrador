@@ -1,6 +1,6 @@
 #card-context{
     max-width: 62rem;
-    margin: 4rem auto;
+    margin: 4rem auto 0;
 
     background: #9393933b;
     padding: 3rem;
@@ -11,11 +11,19 @@
     align-items: center;
     justify-content: space-between;
 
-    margin: 4rem 0; 
+    margin: 4rem 0 0; 
+    position: relative;
 }
 
 .image-card{
     width: 6rem;
+    right: 24rem;
+    top: 29rem;
+    position: absolute;
+}
+
+p, aside{
+    padding: 13px 0;
 }
 
 .add-product{
