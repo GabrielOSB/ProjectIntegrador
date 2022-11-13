@@ -1,4 +1,4 @@
-.card-context{
+#card-context{
     max-width: 62rem;
     margin: 4rem auto;
 
@@ -6,7 +6,7 @@
     padding: 3rem;
 }
 
-.card{
+#card{
     display: flex;
     align-items: center;
     justify-content: space-between;

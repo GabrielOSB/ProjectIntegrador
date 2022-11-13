@@ -1,13 +1,7 @@
 const url = "http://localhost:8080/";
 
 function getUser() {
-  axios
-    .get(url + "api/misterdog")
-    .then((response) => {
-      const data = response.data;
-      renderResult.textContent = JSON.stringify(data);
-    })
-    .catch((error) => console.log(error));
+ 
 }
 
 getUser();
@@ -39,3 +33,39 @@ function addNewUser() {
     console.log('Campo faltando');
   }
 }
+
+const DOM = {
+
+  dogContainer: document.querySelector('#card-context'),
+
+  addDog(renderResult, index){
+    axios
+    .get(url + "api/misterdog")
+    .then((response) => {
+      const data = response.data;
+
+      renderResult.textContent = JSON.stringify(data);
+
+      var arr_from_json = JSON.parse(JSON.stringify(data));
+      
+      arr_from_json.forEach(element => {
+        const div = document.createElement('div');
+
+        var html = `    
+            <h3>${element.Nome}</h3>
+            <aside>${element.Ingrediente}</aside>
+            <p>${element.Preco}</p>
+        `;
+        
+        div.innerHTML = html;
+
+        DOM.dogContainer.appendChild(div);
+      });
+
+    })
+
+    .catch((error) => console.log(error));
+  },
+}
+
+DOM.addDog(renderResult)
